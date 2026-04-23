@@ -1,0 +1,60 @@
+#include <Arduino.h>
+
+// C++ code
+//
+// #include <Servo.h>
+// Servo myServo;
+// const float SOUND_SPEED = 0.0343f; //cm/us
+// const int PIN_SERVO = 3;
+// const int PIN_ECHO = 10;
+// const int PIN_TRIG = 9;
+
+// float getDistance(){
+//   return (pulseIn(PIN_ECHO,HIGH) * SOUND_SPEED)/2;
+// }
+
+// void setBarrier(float distance){
+//   if(distance<=40.0f){
+//      for (int pos = 0; pos <= 90; pos += 1) {
+//     	myServo.write(pos);
+//        	delay(15);
+//     }
+//     delay(3000);
+//     for ( int pos = 90; pos >= 0; pos -= 1) { 
+//         myServo.write(pos);   
+//       	delay(15);
+//     }
+//   }
+// }
+// void setup()
+// {
+//   Serial.begin(9600);
+//   myServo.attach(PIN_SERVO);
+//   myServo.write(0);
+//   pinMode(PIN_ECHO, INPUT);
+//   pinMode(PIN_TRIG, OUTPUT);
+// }
+
+// void loop()
+// {
+//   // 1. Curățăm pinul de Trig
+//   digitalWrite(PIN_TRIG, LOW);
+//   delayMicroseconds(2);
+
+//   // 2. Trimitem impulsul de 10 microsecunde
+//   digitalWrite(PIN_TRIG, HIGH);
+//   delayMicroseconds(10);
+//   digitalWrite(PIN_TRIG, LOW);
+
+//   // 3. Măsurăm distanța
+//   float distance = getDistance();
+  
+//   // 4. Afișăm în Serial Monitor (apasă pe iconița cu "ștecher" din VS Code!)
+//   Serial.print("Distanta: ");
+//   Serial.println(distance);
+
+//   // 5. Acționăm bariera
+//   setBarrier(distance);
+  
+//   delay(100); // O mică pauză să nu obosim procesorul
+// }
